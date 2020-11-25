@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KURS MATA UANG</title>
+</head>
+<body>
+    <center>
+        <h1 style="color: green;">
+            KURS MATA UANG
+          </h1>
+          <label for=""> Nilai Mata Uang</label>
+          <input type="number" id="input_kurs" value="">
+          <br><br>
+          <input type="submit" value="Dollar US" onclick="Dollar()">
+          <input type="submit" value="Riyal" onclick="Riyal()">
+          <input type="submit" value="Ringgit" onclick="Ringgit()">
+          <input type="submit" value="Euro" onclick="Euro()">
+          <input type="submit" value="Yen" onclick="Yen()">
+          <input type="submit" value="Dollar Singapura" onclick="Dollar_Singapura()">
+         
+          <p id="hasil"> Hasil dalam (Rp.): </p>
+        
+        <script>
+            function Dollar(){
+            let input_kurs = document.getElementById('input_kurs').value;
+            let hasil_kurs = input_kurs * 15000;
+            document.getElementById("hasil").innerHTML = hasil_kurs;
+            }
+            function Riyal(){
+            let input_kurs = document.getElementById('input_kurs').value;
+            let hasil_kurs = input_kurs * 3592;
+            document.getElementById("hasil").innerHTML = hasil_kurs;
+            }
+            function Ringgit(){
+            let input_kurs = document.getElementById('input_kurs').value;
+            let hasil_kurs = input_kurs * 3500;
+            document.getElementById("hasil").innerHTML = hasil_kurs;
+            }
+            function Euro(){
+            let input_kurs = document.getElementById('input_kurs').value;
+            let hasil_kurs = input_kurs * 16000;
+            document.getElementById("hasil").innerHTML = hasil_kurs;
+            }
+           
+            function Yen(){
+            let input_kurs = document.getElementById('input_kurs').value;
+            let hasil_kurs = input_kurs * 120;
+            document.getElementById("hasil").innerHTML = hasil_kurs;
+            }
+            
+            function Dollar_Singapura(){
+            let input_kurs = document.getElementById('input_kurs').value;
+            let hasil_kurs = input_kurs * 13472;
+            document.getElementById("hasil").innerHTML = hasil_kurs;
+            }
+        </script>
+        
+        </center>
+</body>
+</html>

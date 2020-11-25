@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login </title>
+  
+   
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif; margin: 200px;">
+   <center>
+       <form method="request">
+           masukan username: <br>
+           <input type="text" placeholder="username" id="username" name="username"><br>
+            password: <br>
+            <input type="text" placeholder="password" id="password" name="password"><br>
+            <button type="submit" onclick="return login()">SUMBMIT</button>
+       </form>
+   </center>
+       <Script type="text/javascript">
+    function login(){
+      let username = document.getElementById("username").value;
+      let password = document.getElementById("password").value;
+      if (username =="ahmad2017" &&  password =="integrity")
+        
+		{alert("log in sukses");
+		
+			return false;}
+		else {window.location = "sukses.html";
+			alert("Username / Password anda salah");
+		}
+	}
+      
+    
+
+    </Script>
+   
+    
+    
+</body>
+</html>

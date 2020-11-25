@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+</head>
+<body>
+    
+        <style>
+            body{
+                font-family :'Lucida Sans', 
+            }
+        </style>
+        
+        
+        <H1 id=" Header">BINCANG - BINCANG SANTUY </H1>
+        <div style="width: 100%; stroke: black;" id="isichat">			
+        </div>	
+        <script type="text/javascript">	
+            function kirim() {	
+            let pesan = document.getElementById("pesan").value;		
+            document.getElementById("isichat").innerHTML += pesan+"<br/>";		
+            document.getElementById("pesan").value = "";		
+            return false;	}
+        </script>       
+            <form style="text-align:start;" onsubmit="return kirim();">		
+                <input id="pesan" style="width: 30%;" placeholder="komentar " type="text" name="pesan">		
+                <button type="submit" onclick="return kirim();">KIRIM PESAN</button>	
+            </form>	
+</body>
+</html>
