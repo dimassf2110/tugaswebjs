@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Latihan Array</title>
+	</head>
+	<body>
+		<script>
+		var buah = ['Pepaya','Mangga','Pisang','Jambu','Sirsak','Naga','Manggis'];
+		buah[2] = 'Jeruk'; //ganti element array index 2
+		buah.pop(); //hapus element terahir (manggis)
+		delete buah[3]; //hapus element index 3 (jambu)
+		buah.push('Nangka','Melon','Semangka');
+		//testing
+		document.write(`Buah index 2:${buah[2]}`);
+		document.write(`<br/>Buah index 3:${buah[3]}`);
+		document.write(`<br/>Buah index 6:${buah[6]}`);
+		document.write(`<hr/>`);
+		//looping
+		for(let b in buah){
+			document.write(`<br/>Buah index ${b} adalah buah ${buah[b]}`);
+		}
+		
+		</script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+	<title>Latihan Dasar2 DOM</title>
+</head>
+<body onload="alert('Welcome')" onunload="alert('Sampai Berjumpa Kembali')">
+	<marquee onmouseover="this.stop()" onmouseout="this.start()">
+		<img src="images/hello-kitty.png" />
+	</marquee>
+	<script>
+		//menambah element baru beserta turunannya
+		let div = document.createElement("div");
+		div.id = "content";
+		div.innerHTML = '<p id="p1">Ini Isi Paragraf</p>';
+		document.body.appendChild(div);
+		//ubah warna textnya menjadi biru berdasarkan p id p1
+		document.getElementById("p1").style.color="blue";
+	</script>
+</body>
+</html>

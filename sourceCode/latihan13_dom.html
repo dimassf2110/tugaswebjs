@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+	<title>Latihan Dasar2 DOM</title>
+</head>
+<body>
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<div>Selamat Pagi</div>
+	<script>
+		//inner html
+		document.getElementById("p1").innerHTML = "Selamat Belajar DOM JS";
+		document.getElementById("p2").innerHTML = "Sangat Menyenangkan";
+		//outer html
+		document.querySelector("div").outerHTML = "<p>Assalamu'alaikum</p>";
+	</script>
+</body>
+</html>

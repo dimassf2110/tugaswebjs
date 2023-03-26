@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+	<title>Latihan DOM, Fungsi & Event</title>
+</head>
+<body>
+	<form id="formulir">
+		Nama Mahasiswa:
+		<input type="text" name="nama" value="" onfocus="kosongin()"/>
+		<input type="button" name="proses" value="Salam" onclick="salam()"/>
+	</form>
+	<script>
+		function salam(){
+			//tangkap request form
+			let frm  = window.document.getElementById("formulir");
+			let mahasiswa = frm.nama.value;
+			alert("Selamat Pagi " + mahasiswa);
+		}
+		
+		function kosongin(){
+			//tangkap request form
+			let frm  = window.document.getElementById("formulir");
+			frm.nama.value = "";
+		}
+	</script>
+</body>
+</html>

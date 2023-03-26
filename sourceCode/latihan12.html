@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Latihan Array Of Object</title>
+	</head>
+	<body>
+		<script>
+		let p1 = {'nip':'111', 'nama':'Budi', 'jabatan':'Manager', 'divisi':'HRD', 'gapok':11000000};
+		let p2 = {'nip':'112', 'nama':'Dedi', 'jabatan':'Asisten Manager', 'divisi':'HRD', 'gapok':7500000};
+		let p3 = {'nip':'113', 'nama':'Deni', 'jabatan':'Asisten Manager', 'divisi':'Keuangan', 'gapok':8000000};
+		let p4 = {'nip':'114', 'nama':'Siti', 'jabatan':'Supervisor', 'divisi':'Marketing', 'gapok':6000000};
+		let p5 = {'nip':'115', 'nama':'Andi', 'jabatan':'Staff', 'divisi':'Operasional', 'gapok':5000000};
+		let p6 = {'nip':'116', 'nama':'Dewi', 'jabatan':'Staff', 'divisi':'Operasional', 'gapok':4000000};
+		let p7 = {'nip':'117', 'nama':'Dini', 'jabatan':'Staff', 'divisi':'Operasional', 'gapok':3500000};
+		
+		let pegawai = [p1,p2,p3,p4,p5,p6,p7]; //array of object
+		
+		//looping for of
+		
+		for(let p of pegawai){
+			//set
+			let tunjab = 0.3 * p.gapok;
+			//let kasta = p.gapok >= 5000000 ? 'Atasan' : 'Bawahan';
+			//document.write(`Tes: ${kasta} &nbsp;
+			
+			document.write(`NIP: ${p.nip} &nbsp;
+			Nama: ${p.nama} &nbsp;
+			Jabatan: ${p.jabatan} &nbsp;
+			Divisi: ${p.divisi} &nbsp;
+			Gapok Pokok: Rp. ${p.gapok.toLocaleString()} &nbsp;
+			Tunjangan Jabatan: Rp. ${ tunjab.toLocaleString() } &nbsp;
+			<br/>`);
+		}
+		
+		
+		</script>
+	</body>
+</html>
